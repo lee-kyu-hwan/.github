@@ -1,0 +1,28 @@
+name: 문서
+description: 문서를 추가하거나 고치거나 지운다
+title: "[docs] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 대상 문서
+      description: 파일 경로나 문서 이름
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 현재 문제
+      description: 무엇이 틀렸거나 빠졌거나 오래됐는지
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 바꿀 내용
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 근거 자료, 관련 이슈·PR
